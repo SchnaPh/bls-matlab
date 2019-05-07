@@ -1,6 +1,6 @@
 % BLS BLS datafeed object constructor
 %   C = BLS verifies that the URL
-%   http://api.bls.gov/publicAPI/v2/timeseries/data is accessible and creates a
+%   https://api.bls.gov/publicAPI/v2/timeseries/data is accessible and creates a
 %   connection handle.
 %
 %   C = BLS(URL) creates the connection handle using the given URL. For
@@ -29,7 +29,7 @@ classdef bls
   methods
     function obj = bls(url, key)
       % Default values
-      DEFAULT_URL = 'http://api.bls.gov/publicAPI/v2/timeseries/data/';
+      DEFAULT_URL = 'https://api.bls.gov/publicAPI/v2/timeseries/data/';
       DEFAULT_KEY = [];
 
       % Set URL 
